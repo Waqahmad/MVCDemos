@@ -20,7 +20,7 @@ namespace DemoApplication.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact(string str)
         {
             ViewBag.Message = "Your contact page.";
 

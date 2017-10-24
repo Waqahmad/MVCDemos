@@ -1,0 +1,44 @@
+﻿@model dynamic
+
+
+@{
+	Func<int, int, int> Sum = (a, b) => a + b;
+
+	int product = 1;
+
+	Action<int> findProduct = delegate (int i)
+	{
+		product = i * i;
+	};
+
+	//findProduct(4);
+}
+
+<h2>Detail</h2>
+
+<ul>
+	<li>
+		@Model.EmployeeInfo.Name
+	</li>
+	<li>
+		@Model.EmployeeInfo.DepartmentID
+	</li>
+	<li>
+		@Model.EmployeeInfo.Age
+	</li>
+	<li>
+		@Model.DepartmentName
+	</li>
+	@Model.UserName
+	<li>
+		@Model.Salary
+	</li>
+	
+
+</ul>
+@Sum(500, 600)
+
+<br />
+<text>Using Action</text>
+@{findProduct(4);}
+@product
