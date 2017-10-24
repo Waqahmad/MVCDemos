@@ -1,0 +1,76 @@
+﻿@model DemoApplication.Models.Department
+
+<div>
+    <h4>Department</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfirmEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContacNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContacNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Budget)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Budget)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Income)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Income)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
